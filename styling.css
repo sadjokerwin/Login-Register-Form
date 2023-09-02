@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #853c3cf6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.registration-form {
+    background-color: #d6b5b5;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #11fc28;
+    font-size: 50px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.link
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 56px;
+    transition: background-color 0.3s;
+}
+.login-page
+{   
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 350px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    margin-bottom:15px;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Colorful inputs */
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    transition: border 0.3s;
+}
+
+/* Fancy placeholders */
+::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+:-moz-placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #aaa;
+}
