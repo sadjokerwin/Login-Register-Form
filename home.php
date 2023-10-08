@@ -20,7 +20,7 @@ if (isset($_SESSION['firstName']) && isset($_SESSION['lastName'])) {
             echo $_SESSION['firstName'] . " " . $_SESSION['lastName'] . "!"; 
             ?> 
             </h1>
-            <a href="logout.php">Logout</a>
+            <a href="Logout.php">Logout</a>
             </form>
         </div>
     </body>
@@ -28,7 +28,7 @@ if (isset($_SESSION['firstName']) && isset($_SESSION['lastName'])) {
 </html>
 <?php 
 }else{
-     header("Location: basePageLogin.php");
+     header("Location: Login.php");
      exit();
 }
  ?>

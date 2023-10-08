@@ -40,7 +40,7 @@
                             <tbody>
                                 <?php 
                                     $query = "SELECT * FROM users";
-                                    $query_run = mysqli_query($db, $query);
+                                    $query_run = mysqli_query($conn, $query);
 
                                     if(mysqli_num_rows($query_run) > 0)
                                     {
@@ -56,9 +56,9 @@
                                                 <td>
                                                     <a href="user-view.php?username=<?= $users['username']; ?>" class="btn btn-info btn-sm">View</a>
                                                     <a href="user-edit.php?username=<?= $users['username']; ?>" class="btn btn-success btn-sm">Edit</a>
-                                                    <form action="code.php" method="POST" class="d-inline">
-                                                        <button type="submit" name="delete_student" value="<?=$student['id'];?>" class="btn btn-danger btn-sm">Delete</button>
-                                                    </form>
+                                                    <a href="user-delete.php?username=<?= $users['username']; ?>" class="btn btn-danger btn-sm">Delete</a>
+                                                    
+                                                    
                                                 </td>
                                             </tr>
                                             <?php

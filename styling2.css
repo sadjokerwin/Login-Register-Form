@@ -12,6 +12,11 @@ h1 {
     color: rgb(252, 252, 252);
     font-size: 30px;
 }
+.error{
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
 
 
 a {

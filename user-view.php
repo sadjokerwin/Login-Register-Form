@@ -34,7 +34,7 @@ require 'DbConnection.php';
                         {
                             $user_Username = $_GET['username'];
                             $query = "SELECT * FROM users WHERE username = '$user_Username' " ;
-                            $query_run = mysqli_query($db, $query);
+                            $query_run = mysqli_query($conn, $query);
                             if(mysqli_num_rows($query_run) > 0)
                             {
                                 $users= mysqli_fetch_array($query_run);
